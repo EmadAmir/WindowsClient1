@@ -27,6 +27,7 @@ namespace WindowsClient1
                 ContactNumber = Convert.ToInt32(txtContactnumber.Text),
                 Password = txtPassword.Text
             };
+
             ServiceReference.RestaurantWCFServiceClient client = new ServiceReference.RestaurantWCFServiceClient();
             client.SaveDetails(restaurant);
             MessageBox.Show("Saved");

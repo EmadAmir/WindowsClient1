@@ -28,31 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.NewUser = new System.Windows.Forms.GroupBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.txtContactnumber = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.CmbGender = new System.Windows.Forms.ComboBox();
             this.txtName = new System.Windows.Forms.TextBox();
+            this.CmbGender = new System.Windows.Forms.ComboBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtContactnumber = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.LoginUserName = new System.Windows.Forms.TextBox();
-            this.LoginPassword = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.button3 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.LoginPassword = new System.Windows.Forms.TextBox();
+            this.LoginUserName = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.NewUser.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -80,107 +77,13 @@
             this.NewUser.TabStop = false;
             this.NewUser.Text = "New User";
             // 
-            // button1
+            // txtName
             // 
-            this.button1.Location = new System.Drawing.Point(262, 362);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Clear";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(27, 362);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Confirm";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(24, 85);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 23);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "User Name";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(24, 136);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 23);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Gender";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(24, 182);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 23);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Date Of Birth";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(23, 232);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(129, 23);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Contact Number";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(24, 289);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(144, 23);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Set New Password";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(149, 33);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 23);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "New User ";
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.Location = new System.Drawing.Point(189, 289);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(148, 20);
-            this.txtPassword.TabIndex = 8;
-            this.txtPassword.Text = "Set password";
-            // 
-            // txtContactnumber
-            // 
-            this.txtContactnumber.Location = new System.Drawing.Point(189, 232);
-            this.txtContactnumber.Name = "txtContactnumber";
-            this.txtContactnumber.Size = new System.Drawing.Size(148, 20);
-            this.txtContactnumber.TabIndex = 9;
-            this.txtContactnumber.Text = "Enter contact number";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(189, 182);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(148, 20);
-            this.dateTimePicker1.TabIndex = 10;
+            this.txtName.Location = new System.Drawing.Point(189, 89);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(148, 20);
+            this.txtName.TabIndex = 12;
+            this.txtName.Text = "Enter Name";
             // 
             // CmbGender
             // 
@@ -194,13 +97,107 @@
             this.CmbGender.TabIndex = 11;
             this.CmbGender.Text = "Select Gender";
             // 
-            // txtName
+            // dateTimePicker1
             // 
-            this.txtName.Location = new System.Drawing.Point(189, 89);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(148, 20);
-            this.txtName.TabIndex = 12;
-            this.txtName.Text = "Enter Name";
+            this.dateTimePicker1.Location = new System.Drawing.Point(189, 182);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(148, 20);
+            this.dateTimePicker1.TabIndex = 10;
+            // 
+            // txtContactnumber
+            // 
+            this.txtContactnumber.Location = new System.Drawing.Point(189, 232);
+            this.txtContactnumber.Name = "txtContactnumber";
+            this.txtContactnumber.Size = new System.Drawing.Size(148, 20);
+            this.txtContactnumber.TabIndex = 9;
+            this.txtContactnumber.Text = "Enter contact number";
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Location = new System.Drawing.Point(189, 289);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(148, 20);
+            this.txtPassword.TabIndex = 8;
+            this.txtPassword.Text = "Set password";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(149, 33);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(87, 23);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "New User ";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(24, 289);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(144, 23);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Set New Password";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(23, 232);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(129, 23);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Contact Number";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(24, 182);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(114, 23);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Date Of Birth";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(24, 136);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(62, 23);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Gender";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(24, 85);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(90, 23);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "User Name";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(27, 362);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Confirm";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(262, 362);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Clear";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -219,39 +216,23 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Login";
             // 
-            // label7
+            // button4
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(6, 179);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(90, 23);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "User Name";
+            this.button4.Location = new System.Drawing.Point(230, 362);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 17;
+            this.button4.Text = "Clear";
+            this.button4.UseVisualStyleBackColor = true;
             // 
-            // label8
+            // button3
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(21, 242);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(76, 23);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Password";
-            // 
-            // LoginUserName
-            // 
-            this.LoginUserName.Location = new System.Drawing.Point(131, 179);
-            this.LoginUserName.Name = "LoginUserName";
-            this.LoginUserName.Size = new System.Drawing.Size(148, 20);
-            this.LoginUserName.TabIndex = 13;
-            // 
-            // LoginPassword
-            // 
-            this.LoginPassword.Location = new System.Drawing.Point(131, 236);
-            this.LoginPassword.Name = "LoginPassword";
-            this.LoginPassword.Size = new System.Drawing.Size(148, 20);
-            this.LoginPassword.TabIndex = 14;
+            this.button3.Location = new System.Drawing.Point(45, 362);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 16;
+            this.button3.Text = "Confirm";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
@@ -263,28 +244,39 @@
             this.label9.TabIndex = 15;
             this.label9.Text = "Existing User Login";
             // 
-            // button3
+            // LoginPassword
             // 
-            this.button3.Location = new System.Drawing.Point(45, 362);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "Confirm";
-            this.button3.UseVisualStyleBackColor = true;
+            this.LoginPassword.Location = new System.Drawing.Point(131, 236);
+            this.LoginPassword.Name = "LoginPassword";
+            this.LoginPassword.Size = new System.Drawing.Size(148, 20);
+            this.LoginPassword.TabIndex = 14;
             // 
-            // button4
+            // LoginUserName
             // 
-            this.button4.Location = new System.Drawing.Point(230, 362);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 17;
-            this.button4.Text = "Clear";
-            this.button4.UseVisualStyleBackColor = true;
+            this.LoginUserName.Location = new System.Drawing.Point(131, 179);
+            this.LoginUserName.Name = "LoginUserName";
+            this.LoginUserName.Size = new System.Drawing.Size(148, 20);
+            this.LoginUserName.TabIndex = 13;
             // 
-            // contextMenuStrip1
+            // label8
             // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(21, 242);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(76, 23);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "Password";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(6, 179);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(90, 23);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "User Name";
             // 
             // login_form
             // 
@@ -309,7 +301,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -328,6 +319,5 @@
         private System.Windows.Forms.TextBox LoginUserName;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
