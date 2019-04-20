@@ -28,21 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnWelcome = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnWelcome
             // 
+            this.btnWelcome.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnWelcome.Font = new System.Drawing.Font("Comic Sans MS", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWelcome.ForeColor = System.Drawing.Color.Red;
-            this.btnWelcome.Image = ((System.Drawing.Image)(resources.GetObject("btnWelcome.Image")));
+            this.btnWelcome.ForeColor = System.Drawing.Color.White;
             this.btnWelcome.Location = new System.Drawing.Point(-7, -27);
             this.btnWelcome.Name = "btnWelcome";
             this.btnWelcome.Size = new System.Drawing.Size(800, 600);
             this.btnWelcome.TabIndex = 0;
             this.btnWelcome.Text = "Welcome to my Cafe";
-            this.btnWelcome.UseVisualStyleBackColor = true;
+            this.btnWelcome.UseVisualStyleBackColor = false;
             this.btnWelcome.Click += new System.EventHandler(this.btnWelcome_Click);
             // 
             // Form1

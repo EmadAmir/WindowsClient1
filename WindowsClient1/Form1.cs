@@ -19,8 +19,8 @@ namespace WindowsClient1
 
         private void btnWelcome_Click(object sender, EventArgs e)
         {
-            Users use = new Users();
-            use.Show();
+            login_form lf = new login_form();
+            lf.Show();
             this.Hide();
         }
     }

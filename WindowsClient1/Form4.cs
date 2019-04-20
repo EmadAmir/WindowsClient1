@@ -27,7 +27,7 @@ namespace WindowsClient1
         {
             ServiceReference.Restaurant rest = new ServiceReference.Restaurant();
             rest.Name = txtUserName.Text;
-            rest.ContactNumber = Convert.ToInt32(txtUserName.Text);
+            rest.ContactNumber = int.Parse(txtUserName.Text);
             ServiceReference.RestaurantWCFServiceClient client = new ServiceReference.RestaurantWCFServiceClient();
             if (Convert.ToInt32(client.Login()) == 1)
             {
