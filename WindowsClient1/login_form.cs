@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Sql;
+using System.Data.SqlClient;
+
 
 namespace WindowsClient1
 {
@@ -19,15 +22,17 @@ namespace WindowsClient1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ServiceReference.Restaurant restaurant = new ServiceReference.Restaurant
-            {
-                Name = txtName.Text,
-                Gender = CmbGender.Text,
-                DateOfBirth = dateTimePicker1.Value,
-                ContactNumber = Convert.ToInt32(txtContactnumber.Text),
-                Password = txtPassword.Text
-            };
+           
+                ServiceReference.Restaurant restaurant = new ServiceReference.Restaurant
+                {
 
+                    Name = txtName.Text,
+                    Gender = CmbGender.Text,
+                    DateOfBirth = dateTimePicker1.Value,
+                    Phone = txtContactnumber.Text,
+                    Pass = txtPassword.Text
+                };
+          
             ServiceReference.RestaurantWCFServiceClient client = new ServiceReference.RestaurantWCFServiceClient();
             client.SaveDetails(restaurant);
             MessageBox.Show("Saved");

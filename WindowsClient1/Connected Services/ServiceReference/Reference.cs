@@ -18,7 +18,7 @@ namespace WindowsClient1.ServiceReference {
     [System.Runtime.Serialization.DataContractAttribute(Name="Restaurant", Namespace="http://schemas.datacontract.org/2004/07/RestaurantWCFService")]
     [System.SerializableAttribute()]
     public partial class Restaurant : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
+        internal string Pass;
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
@@ -95,7 +95,9 @@ namespace WindowsClient1.ServiceReference {
                 }
             }
         }
-        
+
+        public string Phone { get; internal set; }
+
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
         protected void RaisePropertyChanged(string propertyName) {

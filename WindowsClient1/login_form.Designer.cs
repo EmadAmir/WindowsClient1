@@ -83,7 +83,6 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(148, 20);
             this.txtName.TabIndex = 12;
-            this.txtName.Text = "Enter Name";
             // 
             // CmbGender
             // 
@@ -95,7 +94,6 @@
             this.CmbGender.Name = "CmbGender";
             this.CmbGender.Size = new System.Drawing.Size(148, 21);
             this.CmbGender.TabIndex = 11;
-            this.CmbGender.Text = "Select Gender";
             // 
             // dateTimePicker1
             // 
@@ -110,7 +108,6 @@
             this.txtContactnumber.Name = "txtContactnumber";
             this.txtContactnumber.Size = new System.Drawing.Size(148, 20);
             this.txtContactnumber.TabIndex = 9;
-            this.txtContactnumber.Text = "Enter contact number";
             // 
             // txtPassword
             // 
@@ -118,7 +115,6 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(148, 20);
             this.txtPassword.TabIndex = 8;
-            this.txtPassword.Text = "Set password";
             // 
             // label6
             // 
