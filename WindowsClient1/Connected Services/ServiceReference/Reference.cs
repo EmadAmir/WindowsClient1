@@ -18,12 +18,9 @@ namespace WindowsClient1.ServiceReference {
     [System.Runtime.Serialization.DataContractAttribute(Name="Restaurant", Namespace="http://schemas.datacontract.org/2004/07/RestaurantWCFService")]
     [System.SerializableAttribute()]
     public partial class Restaurant : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        internal string Pass;
+        
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int ContactNumberField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.DateTime DateOfBirthField;
@@ -34,6 +31,12 @@ namespace WindowsClient1.ServiceReference {
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string NameField;
         
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PswField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int flagField;
+        
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
             get {
@@ -41,19 +44,6 @@ namespace WindowsClient1.ServiceReference {
             }
             set {
                 this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int ContactNumber {
-            get {
-                return this.ContactNumberField;
-            }
-            set {
-                if ((this.ContactNumberField.Equals(value) != true)) {
-                    this.ContactNumberField = value;
-                    this.RaisePropertyChanged("ContactNumber");
-                }
             }
         }
         
@@ -95,9 +85,33 @@ namespace WindowsClient1.ServiceReference {
                 }
             }
         }
-
-        public string Phone { get; internal set; }
-
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Psw {
+            get {
+                return this.PswField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PswField, value) != true)) {
+                    this.PswField = value;
+                    this.RaisePropertyChanged("Psw");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int flag {
+            get {
+                return this.flagField;
+            }
+            set {
+                if ((this.flagField.Equals(value) != true)) {
+                    this.flagField = value;
+                    this.RaisePropertyChanged("flag");
+                }
+            }
+        }
+        
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
         protected void RaisePropertyChanged(string propertyName) {
@@ -170,10 +184,10 @@ namespace WindowsClient1.ServiceReference {
         System.Threading.Tasks.Task<WindowsClient1.ServiceReference.RestaurantData> GetMenuAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRestaurantWCFService/Login", ReplyAction="http://tempuri.org/IRestaurantWCFService/LoginResponse")]
-        WindowsClient1.ServiceReference.Restaurant Login();
+        void Login(WindowsClient1.ServiceReference.Restaurant restaurant);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRestaurantWCFService/Login", ReplyAction="http://tempuri.org/IRestaurantWCFService/LoginResponse")]
-        System.Threading.Tasks.Task<WindowsClient1.ServiceReference.Restaurant> LoginAsync();
+        System.Threading.Tasks.Task LoginAsync(WindowsClient1.ServiceReference.Restaurant restaurant);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -219,12 +233,12 @@ namespace WindowsClient1.ServiceReference {
             return base.Channel.GetMenuAsync();
         }
         
-        public WindowsClient1.ServiceReference.Restaurant Login() {
-            return base.Channel.Login();
+        public void Login(WindowsClient1.ServiceReference.Restaurant restaurant) {
+            base.Channel.Login(restaurant);
         }
         
-        public System.Threading.Tasks.Task<WindowsClient1.ServiceReference.Restaurant> LoginAsync() {
-            return base.Channel.LoginAsync();
+        public System.Threading.Tasks.Task LoginAsync(WindowsClient1.ServiceReference.Restaurant restaurant) {
+            return base.Channel.LoginAsync(restaurant);
         }
     }
 }
