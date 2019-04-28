@@ -18,7 +18,7 @@ namespace WindowsClient1
         public login_form()
         {
             InitializeComponent();
-            LoginPassword.PasswordChar = '*';
+            //LoginPassword.PasswordChar = '*';
             txtPass.PasswordChar = '*';
         }
 
