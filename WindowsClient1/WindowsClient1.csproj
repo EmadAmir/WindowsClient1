@@ -71,12 +71,43 @@
     <Compile Include="login_form.Designer.cs">
       <DependentUpon>login_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPage.Designer.cs">
+      <DependentUpon>MenuPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RestaurantDetailsDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>RestaurantDetailsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantDetailsDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestaurantDetailsDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantDetailsDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestaurantDetailsDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantDetailsDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestaurantDetailsDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantDetailsDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestaurantDetailsDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantDetailsDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestaurantDetailsDataSet5.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -86,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="login_form.resx">
       <DependentUpon>login_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPage.resx">
+      <DependentUpon>MenuPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -131,6 +165,61 @@
     </None>
     <None Include="RestaurantDetailsDataSet.xss">
       <DependentUpon>RestaurantDetailsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDetailsDataSet1.xsc">
+      <DependentUpon>RestaurantDetailsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDetailsDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestaurantDetailsDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestaurantDetailsDataSet1.xss">
+      <DependentUpon>RestaurantDetailsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDetailsDataSet2.xsc">
+      <DependentUpon>RestaurantDetailsDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDetailsDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestaurantDetailsDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestaurantDetailsDataSet2.xss">
+      <DependentUpon>RestaurantDetailsDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDetailsDataSet3.xsc">
+      <DependentUpon>RestaurantDetailsDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDetailsDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestaurantDetailsDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestaurantDetailsDataSet3.xss">
+      <DependentUpon>RestaurantDetailsDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDetailsDataSet4.xsc">
+      <DependentUpon>RestaurantDetailsDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDetailsDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestaurantDetailsDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestaurantDetailsDataSet4.xss">
+      <DependentUpon>RestaurantDetailsDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDetailsDataSet5.xsc">
+      <DependentUpon>RestaurantDetailsDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDetailsDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestaurantDetailsDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestaurantDetailsDataSet5.xss">
+      <DependentUpon>RestaurantDetailsDataSet5.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

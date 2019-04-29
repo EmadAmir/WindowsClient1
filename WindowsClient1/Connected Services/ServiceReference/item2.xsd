@@ -3,10 +3,10 @@
   <xs:complexType name="Restaurant">
     <xs:sequence>
       <xs:element minOccurs="0" name="DateOfBirth" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="F" type="xs:int" />
       <xs:element minOccurs="0" name="Gender" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Psw" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="flag" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Restaurant" nillable="true" type="tns:Restaurant" />

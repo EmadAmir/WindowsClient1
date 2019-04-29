@@ -26,6 +26,9 @@ namespace WindowsClient1.ServiceReference {
         private System.DateTime DateOfBirthField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int FField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string GenderField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -33,9 +36,6 @@ namespace WindowsClient1.ServiceReference {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string PswField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int flagField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -56,6 +56,19 @@ namespace WindowsClient1.ServiceReference {
                 if ((this.DateOfBirthField.Equals(value) != true)) {
                     this.DateOfBirthField = value;
                     this.RaisePropertyChanged("DateOfBirth");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int F {
+            get {
+                return this.FField;
+            }
+            set {
+                if ((this.FField.Equals(value) != true)) {
+                    this.FField = value;
+                    this.RaisePropertyChanged("F");
                 }
             }
         }
@@ -95,19 +108,6 @@ namespace WindowsClient1.ServiceReference {
                 if ((object.ReferenceEquals(this.PswField, value) != true)) {
                     this.PswField = value;
                     this.RaisePropertyChanged("Psw");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int flag {
-            get {
-                return this.flagField;
-            }
-            set {
-                if ((this.flagField.Equals(value) != true)) {
-                    this.flagField = value;
-                    this.RaisePropertyChanged("flag");
                 }
             }
         }
@@ -184,10 +184,10 @@ namespace WindowsClient1.ServiceReference {
         System.Threading.Tasks.Task<WindowsClient1.ServiceReference.RestaurantData> GetMenuAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRestaurantWCFService/Login", ReplyAction="http://tempuri.org/IRestaurantWCFService/LoginResponse")]
-        void Login(WindowsClient1.ServiceReference.Restaurant restaurant);
+        int Login(WindowsClient1.ServiceReference.Restaurant restaurant);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRestaurantWCFService/Login", ReplyAction="http://tempuri.org/IRestaurantWCFService/LoginResponse")]
-        System.Threading.Tasks.Task LoginAsync(WindowsClient1.ServiceReference.Restaurant restaurant);
+        System.Threading.Tasks.Task<int> LoginAsync(WindowsClient1.ServiceReference.Restaurant restaurant);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -233,11 +233,11 @@ namespace WindowsClient1.ServiceReference {
             return base.Channel.GetMenuAsync();
         }
         
-        public void Login(WindowsClient1.ServiceReference.Restaurant restaurant) {
-            base.Channel.Login(restaurant);
+        public int Login(WindowsClient1.ServiceReference.Restaurant restaurant) {
+            return base.Channel.Login(restaurant);
         }
         
-        public System.Threading.Tasks.Task LoginAsync(WindowsClient1.ServiceReference.Restaurant restaurant) {
+        public System.Threading.Tasks.Task<int> LoginAsync(WindowsClient1.ServiceReference.Restaurant restaurant) {
             return base.Channel.LoginAsync(restaurant);
         }
     }
