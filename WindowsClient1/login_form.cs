@@ -79,26 +79,7 @@ namespace WindowsClient1
             }
             LoginUserName.Text = " ";
             LoginPassword.Text = " ";
-            //switch (restaurant.somevalue)
-            //{
-            //    case 0:
-            //        MessageBox.Show("Please enter user name");
-            //        break;
-            //    case 1:
-            //        MessageBox.Show("Please enter Password");
-            //        break;
-            //    case 2:
-            //        MessageBox.Show("Hi " + restaurant.Name + ",\n" + "Welcome to My Cafe");
-            //        break;
-            //    case 3:
-            //        MessageBox.Show("Your UserName and Password are incorrect try again or create a new account");
-            //        break;
-            //    default:
-            //        Console.WriteLine("Issue with the service");
-            //        break;
-            //}
-            ////LoginUserName.Text = " ";
-            ////LoginPassword.Text = " ";
+           
         }
     }
 }
