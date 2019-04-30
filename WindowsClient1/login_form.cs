@@ -18,7 +18,7 @@ namespace WindowsClient1
         public login_form()
         {
             InitializeComponent();
-            //LoginPassword.PasswordChar = '*';
+            LoginPassword.PasswordChar = '*';
             txtPass.PasswordChar = '*';
         }
 
@@ -37,7 +37,7 @@ namespace WindowsClient1
             ServiceReference.RestaurantWCFServiceClient client = new ServiceReference.RestaurantWCFServiceClient();
             client.SaveDetails(restaurant);
             MessageBox.Show("Saved");
-            MessageBox.Show(restaurant.Psw);
+            //MessageBox.Show(restaurant.Psw);
            
             txtName.Text = " ";
             CmbGender.Text = " ";
@@ -80,6 +80,11 @@ namespace WindowsClient1
             LoginUserName.Text = " ";
             LoginPassword.Text = " ";
            
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
